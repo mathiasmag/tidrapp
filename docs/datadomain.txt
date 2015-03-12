@@ -1,0 +1,21 @@
+Datadomäner
+===========
+
+Datadomäner är de typer av data som kan användas för kolumner i systemet. de beskriver 
+typ av data (text, nummer, timestamp), längd och då det passar även precision. Nullbarhet 
+eller referentiell integritet ingår inte.
+
+Alla kolumner måste vara av en av våra definierade domäner och ha ett suffix av 
+domämnnnmamnet.
+
+En domän med variabel längd kan aldrig ingå i en primär- eller främmande nyckel. den bör 
+rimligen också bara finnas på ett ställe för en betydelse så ingen annan förvirring med 
+längd kan uppstå.
+
+NAMN     DATATYP  LÄNGD  PRECISION  KOMMENTAR
+id       number   5      0          unikt värde för en rad baserat på en sekvens. 
+key      number   10     0          unikt värde för en rad baserat på en affärsnyckel.
+keyalpha varchar2 10     -          unikt värde för en rad baserat på en alphanumerisk 
+                                    affärsnyckel. Bör undvikas då det är möjligt.
+flg      number   1      0          Flagga för ett läge som bara kan vara av eller på.
+
