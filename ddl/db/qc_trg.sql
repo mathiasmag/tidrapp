@@ -6,6 +6,7 @@ create or replace trigger qc
   declare
     v_min_number_words number := mu.qc_spec.min_number_words;
     
+    
   begin
     
   
