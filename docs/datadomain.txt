@@ -8,7 +8,7 @@ eller referentiell integritet ingår inte.
 Alla kolumner måste vara av en av våra definierade domäner och ha ett suffix av 
 domämnnnmamnet.
 
-En domän med variabel längd kan aldrig ingå i en primär- eller främmande nyckel. den bör 
+En domän med variabel längd kan aldrig ingå i en primär- eller främmande nyckel. Den bör 
 rimligen också bara finnas på ett ställe för en betydelse så ingen annan förvirring med 
 längd kan uppstå.
 
